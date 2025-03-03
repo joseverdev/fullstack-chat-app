@@ -12,4 +12,8 @@ router.put('/update-profile', protectRoute, updateProfile)
 
 router.get('/check', protectRoute, checkAuth)
 
+router.get('/test',(req,res)=> {
+    res.send({msg:'funcionando correctamente'})
+})
+
 export default router;
